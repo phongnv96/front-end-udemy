@@ -13,6 +13,22 @@
     <title>Natours | Exciting tours for adventurous people</title>
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">About website</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Your benfits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+            </ul>
+        </nav>
+    </div>
 <header class="header">
     <div class="header__logo-box">
         <img class="header__logo" src="img/logo-white.png" alt="">
@@ -139,7 +155,7 @@
                                 <p class="card__price-only">Only</p>
                                 <div class="card_price-value">$297</div>
                             </div>
-                            <a href="#" class="btn btn--white">Book Now</a>
+                            <a href="#popup" class="btn btn--white">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +187,7 @@
                                 <p class="card__price-only">Only</p>
                                 <div class="card_price-value">$297</div>
                             </div>
-                            <a href="#" class="btn btn--white">Book Now</a>
+                            <a href="#popup" class="btn btn--white">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +219,7 @@
                                 <p class="card__price-only">Only</p>
                                 <div class="card_price-value">$297</div>
                             </div>
-                            <a href="#" class="btn btn--white">Book Now</a>
+                            <a href="#popup" class="btn btn--white">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -337,6 +353,28 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tuors" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    Important Please read these terms before booking
+                </h3>
+                <p class="popup__text">
+                    Jetbrains IntelliJ IDEA Ultimate + Key hỗ trợ phát triển các ứng dụng dành cho điện thoại như java, Groovy, Scala hoặc các ứng dụng Android, nó hỗ trợ các ngôn ngữ lập trình khác nhau như JavaScript, HTML, CSS, Ruby hay Python. Ứng dụng phân tích các kịch bản và cung cấp cho bạn với các đề xuất.
+                    Xin chào anh em, chắc hẳn nhiều anh em coder cũng đang dùng các IDE từ intellij mà chưa có tiền để mua key bản quyền dùng cho sướng. Nhiều anh em là sinh viên có thể dùng email .edu để đăng ký theo năm nhưng nếu anh em đi làm thì kiếm mail này rất khó.
+                </p>
+                <a href="#" class="btn btn--green">Book Now                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </a>
+            </div>
+        </div>
+    </div>
+
 </main>
 </body>
 </html>

@@ -1,25 +1,28 @@
 @import "../abstracts/variables";
+@import "./../abstracts/mixins";
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 30px;
 }
 
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 60px;
-
+  margin-bottom: 6rem;
+  @include respond(phone) {
+    letter-spacing: 0.8rem;
+    font-size: 5rem;
+  }
   &--main {
     display: block;
-    font-size: 50px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 20px;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -27,12 +30,15 @@ body {
 
   &--sub {
     display: block;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 39.4px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -52,7 +58,7 @@ body {
 }
 .heading-tertiary {
   font-size: $default-font-size;
-  font-width: 700;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
